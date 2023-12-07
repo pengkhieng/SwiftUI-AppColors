@@ -6,19 +6,21 @@
 //
 
 import SwiftUI
+import PDFKit
+
 
 struct ContentView: View {
+    let appColors = AppColors.shared
     var body: some View {
-        VStack {
-            Image(systemName: "globe")
-                .imageScale(.large)
-                .foregroundStyle(.tint)
-            Text("Hello, world!")
+        ZStack {
+            LinearGradient(gradient: Gradient(colors: [appColors.primaryColor, appColors.blue2A88DE]), startPoint: .top, endPoint: .bottom)
+                .edgesIgnoringSafeArea(.all)
         }
-        .padding()
     }
 }
+
 
 #Preview {
     ContentView()
 }
+
