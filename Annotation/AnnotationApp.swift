@@ -12,6 +12,9 @@ struct AnnotationApp: App {
     var body: some Scene {
         WindowGroup {
             ContentView()
+//            PDFViewer()
+//            LoginView()
+//                .environmentObject(LoginData())
         }
     }
 }
